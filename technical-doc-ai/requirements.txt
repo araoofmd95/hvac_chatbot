@@ -1,0 +1,41 @@
+# Core Dependencies
+openai>=1.0.0
+python-dotenv
+
+# Document Processing
+PyPDF2
+pdfplumber
+pandas
+numpy  # Compatibility fix
+
+# Vector Storage & Embeddings
+chromadb
+langchain
+langchain-openai
+llama-index
+
+# Knowledge Graph
+networkx
+pyvis  # For visualization
+
+# Mathematical Reasoning
+sympy
+pint
+
+# NLP & Text Processing
+spacy
+transformers
+sentence-transformers
+
+# Web Interface (optional)
+streamlit
+fastapi
+uvicorn
+
+# Utilities
+pyyaml
+loguru
+tqdm
+
+# Optional table extraction (may require system dependencies)
+# camelot-py[cv]

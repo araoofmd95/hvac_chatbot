@@ -1,0 +1,23 @@
+3.2.1 Ventilation Requirements for Carparks
+
+The ventilation system shall provide adequate air movement to prevent accumulation of vehicle exhaust gases.
+
+Requirements:
+a) Minimum ventilation rate shall be 300 m³/hour per car space.
+b) If the carpark area exceeds 2000 m², mechanical ventilation is required.
+c) Maximum static pressure shall not exceed 50 Pa.
+d) The total flow rate Q = n × 300 where n is the number of car spaces.
+
+Table 3.1: Ventilation Rates by Vehicle Type
+Vehicle Type    | Minimum Rate (m³/h)
+Small vehicles  | 250
+Standard cars   | 300  
+Large vehicles  | 350
+
+Example Calculation:
+For a 6-car carpark: 6 × 300 = 1800 m³/hour total ventilation required.
+
+Cross-references:
+- See Section 3.1 for general ventilation principles
+- Refer to Table 3.2 for fan specifications
+- In accordance with AS 1668.2-2012

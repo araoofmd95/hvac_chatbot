@@ -1,0 +1,53 @@
+openai:
+  model: "gpt-4-turbo-preview"
+  embedding_model: "text-embedding-3-small"
+  temperature: 0.1
+  max_tokens: 4000
+
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  table_extraction_method: "camelot"
+  extract_formulas: true
+  extract_tables: true
+  ocr_fallback: true
+
+vector_store:
+  collection_name: "technical_docs"
+  similarity_top_k: 10
+  persist_directory: "./chroma_db"
+  distance_metric: "cosine"
+
+reasoning:
+  calculation_precision: 4
+  unit_system: "SI"
+  validation_threshold: 0.01
+  max_calculation_steps: 10
+  symbolic_simplification: true
+
+query_processing:
+  max_context_length: 4000
+  include_reasoning_steps: true
+  citation_format: "detailed"
+  confidence_threshold: 0.7
+  max_search_results: 10
+
+logging:
+  level: "INFO"
+  file: "logs/technical_doc_ai.log"
+  max_size: "10MB"
+  backup_count: 5
+
+ui:
+  theme: "streamlit"
+  page_title: "Technical Document AI"
+  enable_file_upload: true
+  enable_history: true
+  max_file_size_mb: 50
+
+# System limits
+limits:
+  max_document_size_mb: 100
+  max_pages_per_document: 1000
+  max_concurrent_queries: 5
+  max_chunks_per_document: 10000
